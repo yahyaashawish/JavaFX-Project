@@ -6,6 +6,7 @@
 package javafx.project;
 
 import View.RegisterPage;
+import View.ViewManager;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,7 +23,7 @@ public class JavaFXProject extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        RegisterPage reg= new RegisterPage();
+       ViewManager.openRegisterPage();
     }
 
     /**

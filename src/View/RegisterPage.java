@@ -5,6 +5,9 @@
  */
 package View;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -73,9 +76,21 @@ public class RegisterPage extends Stage {
         femaleGender.setToggleGroup(genderGroup);
         HBox genderHbox = new HBox(10,maleGender,femaleGender);
         
-        registerBtn = new Button("register");
+        registerBtn = new Button("Register");
         registerBtn.setCursor(Cursor.HAND);
         registerBtn.getStyleClass().add("btn");
+        registerBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    ViewManager.openAdminPage();
+                    ViewManager.closeRegisterPage();
+                } catch (IOException ex) {
+                    Logger.getLogger(RegisterPage.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+        });
         darkModeCheck = new CheckBox("Dark Mode");
         darkModeCheck.setPadding(new Insets(0, 0, 20, 0));
         grid = new GridPane();
