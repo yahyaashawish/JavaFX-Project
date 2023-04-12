@@ -12,13 +12,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
  * @author Yahya
  */
-public class UsersManagmentController implements Initializable {
+public class AccountsManagmentController implements Initializable {
 
     @FXML
     private Button usersManagmentPageBtn;
@@ -27,13 +28,17 @@ public class UsersManagmentController implements Initializable {
     @FXML
     private Button operationsPageBtn;
     @FXML
-    private Button createNewUserBtn;
+    private Button createNewAccountrBtn;
     @FXML
-    private Button showAllUsersBtn;
+    private Button showAllAccountsBtn;
     @FXML
-    private Button updateSelectedUserBtn;
+    private Button updateSelectedAccountBtn;
     @FXML
-    private Button deleteSelectedUserBtn;
+    private Button deleteSelectedAccountBtn;
+    @FXML
+    private Button searchAccountBtn;
+    @FXML
+    private TextField accontSearchTF;
 
     /**
      * Initializes the controller class.
@@ -45,11 +50,11 @@ public class UsersManagmentController implements Initializable {
 
     @FXML
     private void showUsersManagmentPage(ActionEvent event) {
+         ViewManager.adminPage.changeSceneToUsersManagment();
     }
 
     @FXML
     private void showAccountsPage(ActionEvent event) {
-         ViewManager.adminPage.changeSceneToAccountsManagment();
     }
 
     @FXML
@@ -57,20 +62,23 @@ public class UsersManagmentController implements Initializable {
     }
 
     @FXML
-    private void showUserCreationPage(ActionEvent event) {
-        ViewManager.adminPage.changeSceneToCreateUser();
+    private void showAccountCreationPage(ActionEvent event) {
     }
 
     @FXML
-    private void showAllUsers(ActionEvent event) {
+    private void showAllAccounts(ActionEvent event) {
     }
 
     @FXML
-    private void updateSelectedUser(ActionEvent event) {
+    private void updateSelectedAccount(ActionEvent event) {
     }
 
     @FXML
-    private void deleteSelectedUser(ActionEvent event) {
+    private void deleteSelectedAccount(ActionEvent event) {
+    }
+
+    @FXML
+    private void searchForAnAccount(ActionEvent event) {
     }
     
 }

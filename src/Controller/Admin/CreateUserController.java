@@ -53,10 +53,12 @@ public class CreateUserController implements Initializable {
 
     @FXML
     private void showUsersManagmentPage(ActionEvent event) {
+        ViewManager.adminPage.changeSceneToUsersManagment();
     }
 
     @FXML
     private void showAccountsPage(ActionEvent event) {
+        ViewManager.adminPage.changeSceneToAccountsManagment();
     }
 
     @FXML

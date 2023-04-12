@@ -20,21 +20,27 @@ public class AdminDashboard extends Stage{
     // All Scenes that AdminDashboard page have
     private Scene usersManagmentScene;
     private Scene createUserScene;
-    //private Scene accountsScene;
+    private Scene accountsManagmentScene;
+
     //private Scene operationsScene;
 
     public AdminDashboard() throws IOException {
         
         //load UserManagment FXML File in UsersManagment Scene
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AdminFXML/UsersManagment.fxml"));
-        Parent root = loader.load();     
-        usersManagmentScene = new Scene(root);
+        FXMLLoader usersManagmentLoader = new FXMLLoader(getClass().getResource("AdminFXML/UsersManagment.fxml"));
+        Parent usersManagmentRoot = usersManagmentLoader.load();     
+        usersManagmentScene = new Scene(usersManagmentRoot);
         
         
         //load CreateUser FXML File in CreateUser Scene
-        FXMLLoader loaderCreate = new FXMLLoader(getClass().getResource("AdminFXML/CreateUser.fxml"));
-        Parent rootCreate = loaderCreate.load();     
-        createUserScene = new Scene(rootCreate);
+        FXMLLoader createUserLoader = new FXMLLoader(getClass().getResource("AdminFXML/CreateUser.fxml"));
+        Parent createUserRoot = createUserLoader.load();     
+        createUserScene = new Scene(createUserRoot);
+        
+        //load AccountsManagment FXML File in AccountsManagment Scene
+        FXMLLoader accountsLoader = new FXMLLoader(getClass().getResource("AdminFXML/AccountsManagment.fxml"));
+        Parent accountsRoot = accountsLoader.load();     
+        accountsManagmentScene = new Scene(accountsRoot);
         
         // Set Main Scene in Admin Dasboard ( UsersManagment Scene )
         this.setScene(usersManagmentScene);
@@ -47,6 +53,10 @@ public class AdminDashboard extends Stage{
     }
     public void changeSceneToUsersManagment(){
         this.setScene(usersManagmentScene);
+    }
+    
+    public void changeSceneToAccountsManagment(){
+        this.setScene(accountsManagmentScene);
     }
     
     
