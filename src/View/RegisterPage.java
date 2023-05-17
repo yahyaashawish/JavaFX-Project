@@ -76,7 +76,7 @@ public class RegisterPage extends Stage {
         femaleGender.setToggleGroup(genderGroup);
         HBox genderHbox = new HBox(10,maleGender,femaleGender);
         
-        registerBtn = new Button("Register");
+        registerBtn = new Button("Enter As Guest");
         registerBtn.setCursor(Cursor.HAND);
         registerBtn.getStyleClass().add("btn");
         registerBtn.setOnAction(new EventHandler<ActionEvent>() {
@@ -109,7 +109,7 @@ public class RegisterPage extends Stage {
         grid.add(genderHbox, 1, 5);
         grid.add(registerBtn, 1, 6, 2, 2);
         grid.setAlignment(Pos.CENTER);
-        stackPaneLabel = new Label("Sign up \n Welcome to our system");
+        stackPaneLabel = new Label("Sign up \n Welcome to our Bank System");
         stackPane = new StackPane(stackPaneLabel);
         stackPane.setMinWidth(200);
         stackPane.setMinHeight(200);

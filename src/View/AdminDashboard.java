@@ -44,7 +44,7 @@ public class AdminDashboard extends Stage{
         
         // Set Main Scene in Admin Dasboard ( UsersManagment Scene )
         this.setScene(usersManagmentScene);
-        this.setTitle("Admin Dasboard");
+        this.setTitle("Admin Dashboard");
         
         
     }

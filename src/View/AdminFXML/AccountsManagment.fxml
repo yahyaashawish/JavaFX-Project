@@ -103,15 +103,19 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="searchAccountBtn" layoutX="545.0" layoutY="111.0" mnemonicParsing="false" onAction="#searchForAnAccount" prefHeight="36.0" prefWidth="67.0" styleClass="showAllBtn" stylesheets="@../../css/admin.css" text="Search">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Button>
-            <TextField fx:id="accontSearchTF" layoutX="358.0" layoutY="111.0" prefHeight="36.0" prefWidth="187.0" promptText="Account number" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <HBox layoutX="357.0" layoutY="105.0" prefHeight="36.0" prefWidth="255.0">
+               <children>
+                  <TextField fx:id="accontSearchTF" prefHeight="36.0" prefWidth="187.0" promptText="Account number" styleClass="textField" stylesheets="@../../css/admin.css" />
+                  <Button fx:id="searchAccountBtn" mnemonicParsing="false" onAction="#searchForAnAccount" prefHeight="36.0" prefWidth="67.0" styleClass="showAllBtn" stylesheets="@../../css/admin.css" text="Search">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </AnchorPane>
       <Label layoutX="233.0" layoutY="13.0" prefHeight="42.0" prefWidth="194.0" text="Accounts Managment" textFill="#838383">
