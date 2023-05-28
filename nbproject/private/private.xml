@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Yahya/Documents/NetBeansProjects/JavaFX-Project/src/Controller/Admin/UsersManagmentController.java</file>
-            <file>file:/C:/Users/Yahya/Documents/NetBeansProjects/JavaFX-Project/src/View/AdminFXML/UpdateUserPage.fxml</file>
-            <file>file:/C:/Users/Yahya/Documents/NetBeansProjects/JavaFX-Project/src/Controller/Admin/CreateUserController.java</file>
-            <file>file:/C:/Users/Yahya/Documents/NetBeansProjects/JavaFX-Project/src/Controller/Admin/UpdateUserPageController.java</file>
-            <file>file:/C:/Users/Yahya/Documents/NetBeansProjects/JavaFX-Project/src/View/RegisterPage.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
